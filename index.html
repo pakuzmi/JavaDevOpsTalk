@@ -189,6 +189,7 @@
                             <li>git clone ${url}</li>
                             <li>git checkout ${branchName}</li>
                             <li>Do work</li>
+			    <li>git add .</li>
                             <li>git commit -m ${MessageAboutCommit}</li>
                             <li>git push origin ${branchName}</li>
                         </ul>
@@ -382,7 +383,7 @@ $ java HelloWorld
                         <li>compile</li>
                         <li>test</li>
                         <li>provided</li>
-                        <li>runtime</li>
+                        <li>runtime / optional ?</li>
                         <li>system</li>
                     </ul>
                 </section>
@@ -409,6 +410,7 @@ mvn test
                 <section>
                     <h1>Плохой код</h1>
                     <pre style="width:auto;"><code data-trim class="bash">
+# сделать лучше пример
 git checkout develop
 git pull
 mvn clean install
@@ -419,6 +421,7 @@ BUILD FAILED
                 </section>
                 <section>
                     <h1>Проблемы окружения</h1>
+<div>И здесь по лучше пример</div>
                     <table>
                         <tr>
                             <td><img src="img/your_pc.png"/></td>
@@ -445,7 +448,7 @@ BUILD FAILED
                 <section>
                     <h1>CI Jenkins</h1>
                     <ul>
-                        <li>Быстро находим ошибки</li>
+                        <li>Быстро находит ошибки</li>
                         <li>Тестируем весь код</li>
                         <li>Наличие стабильной версии кода</li>
                         <li>Повышение качества</li>
@@ -462,7 +465,7 @@ BUILD FAILED
                         <li>Сборка</li>
                         <li>Статический анализ</li>
                         <li>Unit тестирование</li>
-                        <li>Запуск версии</li>
+                        <li>Присвоение версии</li>
                         <li>Функциональные тесты</li>
                         <li>Сохранение</li>
                         <li>Отчет</li>
@@ -498,8 +501,7 @@ BUILD FAILED
                     <h1>GitHub. Инструменты</h1>
                     <ul>
                         <li>CodeShip</li>
-                        <li>Codacy</li>
-                        <li>Codeclimate</li>
+                        <li>Codacy / Codeclimate</li>
                         <li>JitPack</li>
                     </ul>
                 </section>
@@ -547,12 +549,14 @@ BUILD FAILED
                         </ul>
                     </p>
                 </section>
+		<section>
+			<h1>Контейнер не серебренная пуля</h1>
+		</section>
                 <section>
                     <h1>Cloud провайдеры</h1>
                     <ul>
                         <li>MS Azure</li>
                         <li>Amazon AWS</li>
-                        <li>Digital Ocean</li>
                         <li>Heroku</li>
                         <li>Openstack</li>
                         <li>Openshift</li>
@@ -569,14 +573,25 @@ BUILD FAILED
                 </section>
 
                 <section>
+                    <h1>Приложение в WildFly</h1>
+                    <ul>
+                    	<li>Зайти в проект</li>
+                    	<li>Зайти в Applications -> Routes </li>
+                        <li>Зайти в wildfly и увидеть URL</li>
+                    </ul>
+                </section>
+
+                <section>
                         <h1>InfluxDb</h1>
                         <p><a href="https://www.influxdata.com/time-series-platform/influxdb/">https://www.influxdata.com/time-series-platform/influxdb/</a></p>
                         <p>
-                            Time-series база данных
+                            Time-series (NoSql) база данных
                         </p>
                         <p>Каждая БД содержит набор замеров (последовательностей / series) данных</p>
                         <p>
                             Каждая "строка" набора замеров - Время, Значение, Тэги
+
+			    написать преимущества
                         </p>
                 </section>
 
@@ -586,6 +601,7 @@ BUILD FAILED
                         <ul>
                             <li>Зайти в проект</li>
                             <li>Зайти в Applications -> Routes </li>
+                            <li>Зайти в wildfly-influxdb и увидеть URL</li>
                         </ul>
                 </section>
 
