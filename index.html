@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
 
-        <title>DevOps/</title>
+        <title>DevOps</title>
 
         <meta name="description" content="Talk about java dev ops">
         <meta name="author" content="Denis V. Kirpichenkov">
@@ -90,7 +90,7 @@
                         <a href="https://github.com/d0k1">Кирпиченков Денис</a> / <a href="mailto:dkirpichenkov@naumen.ru">dkirpichenkov@naumen.ru</a>
                         <br/>
                         <br/>
-                        <a href="https://d0k1.github.io/GetRest/">d0k1.github.io/GetRest/</a>
+                        <a href="https://d0k1.github.io/JavaDevOpsTalk/">d0k1.github.io/JavaDevOpsTalk/</a>
                         </small>
                     </p>
                 </section>
@@ -109,24 +109,25 @@
                         </p>
                     </section>
 
+                    <section>
+                        <h1>Version Control Systems</h1>
+                        <ul>
+                            <li>Репозитарий</li>
+                            <li>Коммит</li>
+                            <li>Версия/Состояние/Ревизия</li>
+                        </ul>
+                    </section>
+
                 <section>
                     <h1>Version Control Systems</h1>
                     <p>
                         <ul>
                             <li>Чтобы видеть историю изменений</li>
-                            <li>Чтобы переключаться между версиями кода или документов</li>
+                            <li>Чтобы переключаться между состояниями кода</li>
                             <li>Удобно вести совместную работу</li>
                             <li>Увидеть автора и дату создания версии</li>
                         </ul>
                     </p>
-                </section>
-
-                <section>
-                    <h1>Ключевые слова</h1>
-                    <ul>
-                        <li>Репозитарий</li>
-                        <li>Коммит</li>
-                    </ul>
                 </section>
 
                 <section>
@@ -189,7 +190,7 @@
                             <li>git clone ${url}</li>
                             <li>git checkout ${branchName}</li>
                             <li>Do work</li>
-			    <li>git add .</li>
+                            <li>git add .</li>
                             <li>git commit -m ${MessageAboutCommit}</li>
                             <li>git push origin ${branchName}</li>
                         </ul>
@@ -258,6 +259,8 @@ $ java HelloWorld
                 <section>
                     <h1>Maven</h1>
                     <p> Одна из самых популярных систем сборки
+                        <br/>
+                        <a href="https://maven.apache.org">https://maven.apache.org</a>
                         <ul>
                             <li>описание проекта в файле pom.xml</li>
                             <li>сделан для сборки в Java</li>
@@ -383,7 +386,7 @@ $ java HelloWorld
                         <li>compile</li>
                         <li>test</li>
                         <li>provided</li>
-                        <li>runtime / optional ?</li>
+                        <li>runtime</li>
                         <li>system</li>
                     </ul>
                 </section>
@@ -409,20 +412,41 @@ mvn test
                 </section>
                 <section>
                     <h1>Плохой код</h1>
-                    <pre style="width:auto;"><code data-trim class="bash">
-# сделать лучше пример
-git checkout develop
+                    <table>
+                        <tr>
+                            <td>"Плохой" разработчик</td>
+                            <td>"Хороший" разработчик</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <pre style="width:auto;"><code data-trim class="bash">
+# завтра в отпуск
+git checkout master
+# Надо срочно доделать задачу
+git commit -am 'Killer feature'
+git push origin master
+# Наконец то отпуск
+                                </code></pre>
+                            </td>
+                            <td>
+                                <pre style="width:auto;"><code data-trim class="bash">
+git checkout master
 git pull
 mvn clean install
 ...
-...
 BUILD FAILED
-                    </code></pre>
+                                </code></pre>
+                            </td>
+                        </tr>
+                    </table>
                 </section>
                 <section>
                     <h1>Проблемы окружения</h1>
-<div>И здесь по лучше пример</div>
                     <table>
+                        <tr>
+                            <td>Windows 95 OSR2</td>
+                            <td>MacPro late 2017</td>
+                        </tr>
                         <tr>
                             <td><img src="img/your_pc.png"/></td>
                             <td><img src="img/not_your_pc.png" /></td>
@@ -440,6 +464,8 @@ BUILD FAILED
                 </section>
                 <section>
                     <h1>Много тестов</h1>
+                    <div>8.5kilo тестов, 24 дочерних узла</div>
+                    <img src="img/many_tests.png"/>
                 </section>
                 <section>
                     <h1>Цикл разработки</h1>
@@ -549,19 +575,82 @@ BUILD FAILED
                         </ul>
                     </p>
                 </section>
-		<section>
-			<h1>Контейнер не серебренная пуля</h1>
-		</section>
+        <section>
+            <h1>Лучшего варианта нет</h1>
+        </section>
                 <section>
                     <h1>Cloud провайдеры</h1>
                     <ul>
-                        <li>MS Azure</li>
-                        <li>Amazon AWS</li>
+                        <li>MS Azure / AWS</li>
                         <li>Heroku</li>
-                        <li>Openstack</li>
                         <li>Openshift</li>
                     </ul>
                 </section>
+                <section>
+                    <h1>Openshift</h1>
+                    <ul>
+                        <li>Docker</li>
+                        <li>Kubernetes</li>
+                        <li>UI</li>
+                    </ul>
+                    <p><a href="https://148.251.87.70.nip.io:8443">https://148.251.87.70.nip.io:8443</a> </p>
+                </section>
+                
+                <section>
+                        <h1>Openshift</h1>
+                        <img src="img/openshift01.png"/>
+                </section>
+        
+                <section>
+                        <h1>Openshift</h1>
+                        <img src="img/openshift02.png"/>
+                </section>
+
+                <section>
+                        <h1>Openshift</h1>
+                        <img src="img/openshift03.png"/>
+                </section>
+
+                <section>
+                        <h1>Openshift</h1>
+                        <img src="img/openshift04.png"/>
+                </section>
+
+                <section>
+                        <h1>Openshift</h1>
+                        <img src="img/openshift05.png"/>
+                </section>
+
+                <section>
+                        <h1>Openshift</h1>
+                        <img src="img/openshift06.png"/>
+                </section>
+
+                <section>
+                        <h1>Openshift</h1>
+                        <img src="img/openshift07.png"/>
+                </section>
+
+                <section>
+                        <h1>Openshift</h1>
+                        <img src="img/openshift07-1.png"/>
+                </section>
+
+                <section>
+                        <h1>Openshift</h1>
+                        <img src="img/openshift08.png"/>
+                </section>
+
+                <section>
+                        <h1>Openshift</h1>
+                        <img src="img/openshift09.png"/>
+                </section>
+
+                <section>
+                        <h1>Openshift</h1>
+                        <img src="img/openshift10.png"/>
+                </section>
+
                 <section>
                     <h1>Openshift</h1>
                     <ul>
@@ -575,8 +664,8 @@ BUILD FAILED
                 <section>
                     <h1>Приложение в WildFly</h1>
                     <ul>
-                    	<li>Зайти в проект</li>
-                    	<li>Зайти в Applications -> Routes </li>
+                        <li>Зайти в проект</li>
+                        <li>Зайти в Applications -> Routes </li>
                         <li>Зайти в wildfly и увидеть URL</li>
                     </ul>
                 </section>
@@ -590,9 +679,17 @@ BUILD FAILED
                         <p>Каждая БД содержит набор замеров (последовательностей / series) данных</p>
                         <p>
                             Каждая "строка" набора замеров - Время, Значение, Тэги
-
-			    написать преимущества
                         </p>
+                </section>
+
+                <section>
+                        <h1>InfluxDb</h1>
+                        <ul>
+                            <li>Оптимально хранит Time Series данные</li>
+                            <li>Позволяет сразу по ним считать статистику</li>
+                            <li>Позволяет "архивировать" старые данные</li>
+                            <li>Визуализация метрик</li>
+                        </ul>
                 </section>
 
                 <section>
