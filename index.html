@@ -617,80 +617,6 @@ BUILD FAILED
                 </section>
                 
                 <section>
-                        <h1>Openshift</h1>
-                        <img src="img/openshift01.png"/>
-                </section>
-        
-                <section>
-                        <h1>Openshift</h1>
-                        <img src="img/openshift02.png"/>
-                </section>
-
-                <section>
-                        <h1>Openshift</h1>
-                        <img src="img/openshift03.png"/>
-                </section>
-
-                <section>
-                        <h1>Openshift</h1>
-                        <img src="img/openshift04.png"/>
-                </section>
-
-                <section>
-                        <h1>Openshift</h1>
-                        <img src="img/openshift05.png"/>
-                </section>
-
-                <section>
-                        <h1>Openshift</h1>
-                        <img src="img/openshift06.png"/>
-                </section>
-
-                <section>
-                        <h1>Openshift</h1>
-                        <img src="img/openshift07.png"/>
-                </section>
-
-                <section>
-                        <h1>Openshift</h1>
-                        <img src="img/openshift07-1.png"/>
-                </section>
-
-                <section>
-                        <h1>Openshift</h1>
-                        <img src="img/openshift08.png"/>
-                </section>
-
-                <section>
-                        <h1>Openshift</h1>
-                        <img src="img/openshift09.png"/>
-                </section>
-
-                <section>
-                        <h1>Openshift</h1>
-                        <img src="img/openshift10.png"/>
-                </section>
-
-                <section>
-                    <h1>Openshift</h1>
-                    <ul>
-                        <li>Новый проект</li>
-                        <li>Java -> WildFly + NDAP + PostgreSQL + InfluxDB (All Persistent)</li>
-                        <li>Указать Git Repository URL</li>
-                        <li>Инфраструктура готова</li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h1>Приложение в WildFly</h1>
-                    <ul>
-                        <li>Зайти в проект</li>
-                        <li>Зайти в Applications -> Routes </li>
-                        <li>Зайти в wildfly и увидеть URL</li>
-                    </ul>
-                </section>
-
-                <section>
                         <h1>InfluxDb</h1>
                         <p><a href="https://www.influxdata.com/time-series-platform/influxdb/">https://www.influxdata.com/time-series-platform/influxdb/</a></p>
                         <p>
@@ -709,39 +635,129 @@ BUILD FAILED
                             <li>Позволяет сразу по ним считать статистику</li>
                             <li>Позволяет "архивировать" старые данные</li>
                             <li>Визуализация метрик</li>
+                            <li>SQL like язык запросов</li>
                         </ul>
                 </section>
-
-                <section>
-                        <h1>InfluxDb</h1>
-                        <p>Точка входа</p>
-                        <ul>
-                            <li>Зайти в проект</li>
-                            <li>Зайти в Applications -> Routes </li>
-                            <li>Зайти в wildfly-influxdb и увидеть URL</li>
-                        </ul>
-                </section>
-
-                <section>
-                    <h1>InfluxDb</h1>
-                    <p>Пароли</p>
-                    <ul>
-                        <li>Зайти в проект</li>
-                        <li>Зайти в Resource -> Secrets</li>
-                        <li>wildfly-influxdb</li>
-                        <li>Reveal Secret</li>
-                    </ul>
-                </section>
+                
                 <section>
                         <h1>InfluxDb</h1>
                         <p>
                             Простой запрос
                             <br/>
-                            /query?q=SHOW+DATABASES
+                            127.0.0.1:8086/query?q=SHOW+DATABASES
                         </p>
                 </section>
+
                 <section>
-                    <h1>Все вместе</h1>
+                        <h1>Openshift. Проект</h1>
+                        <p>4 независимых контейнера</p>
+                        <ul>
+                            <li>WildFly</li>
+                            <li>NDAP</li>
+                            <li>InfluxDb</li>
+                            <li>PostgreSQL</li>
+                        </ul>
+                </section>
+
+                <section>
+                        <h1>Openshift</h1>
+                        <ul>
+                            <li>новый проект</li>
+                            <li>Точки доступа(Url)</li>
+                            <li>Логины пароли</li>
+                            <li>Переменные окружения</li>
+                            <li>Обновление приложения</li>
+                            <li>Логи</li>
+                        </ul>
+                </section>
+
+                <section>
+                        <h1>Openshift. Новый проект</h1>
+                        <img src="img/openshift01.png"/>
+                </section>
+        
+                <section>
+                        <h1>Openshift. Новый проект</h1>
+                        <img src="img/openshift02.png"/>
+                </section>
+
+                <section>
+                        <h1>Openshift. Новый проект</h1>
+                        <img src="img/openshift03.png"/>
+                </section>
+
+                <section>
+                        <h1>Openshift. Новый проект</h1>
+                        <img src="img/openshift04.png"/>
+                </section>
+
+                <section>
+                        <h1>Openshift. Новый проект</h1>
+                        <img src="img/openshift05.png"/>
+                </section>
+
+                <section>
+                        <h1>Openshift. 4 контейнера</h1>
+                        <img src="img/openshift06.png"/>
+                </section>
+
+                <section>
+                        <h1>Openshift. Urls</h1>
+                        <img src="img/openshift07.png"/>
+                </section>
+
+                <section>
+                        <h1>Openshift. Urls</h1>
+                        <img src="img/openshift07-1.png"/>
+                </section>
+
+                <section>
+                        <h1>Openshift. Пароли</h1>
+                        <img src="img/openshift08.png"/>
+                </section>
+
+                <section>
+                        <h1>Openshift. Пароли</h1>
+                        <img src="img/openshift09.png"/>
+                </section>
+
+                <section>
+                        <h1>Openshift. Пароли</h1>
+                        <img src="img/openshift10.png"/>
+                </section>
+
+                <section>
+                        <h1>Openshift. Окружение</h1>
+                        <img src="img/openshift12.png"/>
+                </section>
+
+                <section>
+                        <h1>Openshift. Окружение</h1>
+                        <img src="img/openshift13.png"/>
+                </section>
+
+                <section>
+                        <h1>Openshift. Новая сборка</h1>
+                        <img src="img/openshift14.png"/>
+                </section>
+
+                <section>
+                        <h1>Openshift. Логи</h1>
+                        <img src="img/openshift15.png"/>
+                </section>
+
+                <section>
+                        <h1>Openshift. Логи</h1>
+                        <img src="img/openshift16.png"/>
+                </section>
+
+                <section>
+                        <h1>Openshift. Логи</h1>
+                        <img src="img/openshift17.png" style="height:500px; width:1200px"/>
+                </section>
+
+                <section>
+                    <h1>Первое задание</h1>
                     <ul>
                         <li>Форк https://github.com/naumen/liquid-log</li>
                         <li>Создание ветки</li>
