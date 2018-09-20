@@ -70,8 +70,21 @@
             }
             .corp-name {
                 color: orangered;
-                font-family: "Circe", sans-serif;;
+                font-family: "Circe", sans-serif;
             }
+
+            /* .reveal .slides {
+                margin: 0 auto;
+            } */
+            
+            body {
+                transform: scale(.8) translateY(-200px);
+            }
+
+            img {
+                transform: scale(.8)
+            }
+
         </style>
     </head>
 
@@ -94,7 +107,7 @@
                         <a href="https://github.com/DonKeyHot1">Наговицин Максим</a> / <a href="mailto:mnagovitsin@naumen.ru">mnagovitsin@naumen.ru</a>
                         <br/>
                         <br/>
-                        <a href="https://donkeyhot1.github.io/JavaDevOpsTalk/">donkeyhot1.github.io/JavaDevOpsTalk/</a>
+                        <a href="https://donkeyhot1.github.io/JavaDevOpsTalk">donkeyhot1.github.io/JavaDevOpsTalk</a>
                         </small>
                     </p>
                 </section>
@@ -103,12 +116,11 @@
                         <h1>План</h1>
                         <p>
                             <ul>
-                                <li>Git</li>
-                                <li>Maven</li>
-                                <li>Jenkins</li>
-                                <li>Github</li>
-                                <li>Openshift</li>
-                                <li>Все сразу</li>
+                                <li><b>VCS</b> (Version Control System/Система контроля версий)</li>
+                                <li>Системы сборки приложений. <b>Maven</b>. <b>Gradle</b>.</li>
+                                <li><b>CI</b> (Continuous Integration/Система непрерывной интеграции) <b>Jenkins</b></li>
+                                <li>VCS-Хостинги. <b>Github</b></li>
+                                <li>Система развертывания и управления контейнерами <b>Openshift</b></li>
                             </ul>
                         </p>
                     </section>
@@ -121,7 +133,7 @@
                     <section>
                         <h1>Version Control Systems</h1>
                         <ul>
-                            <li>Репозитарий</li>
+                            <li>Репозиторий</li>
                             <li>Коммит</li>
                             <li>Версия/Состояние/Ревизия</li>
                         </ul>
@@ -424,7 +436,7 @@ $ java HelloWorld
                     <h1>Система непрерывной интеграции</h1>
                     <ul>
                         <li>Рутина</li>
-                        <li>Плохой код в репозитарии</li>
+                        <li>Плохой код в репозитории</li>
                         <li>Проблемы окружения</li>
                         <li>История сборок</li>
                         <li>Много-много тестов</li>
@@ -545,7 +557,7 @@ BUILD FAILED
                 <section>
                     <h1>Github flow</h1>
                     <ul>
-                        <li>Fork репозитария</li>
+                        <li>Fork репозитория</li>
                         <li>Создание ветки</li>
                         <li>Коммит</li>
                         <li>Pull request</li>
@@ -766,18 +778,13 @@ BUILD FAILED
                 </section>
 
                 <section>
-                        <h1>Openshift. Логи</h1>
-                        <img src="img/openshift17.png" style="height:350px; width:1100px"/>
-                </section>
-
-                <section>
                     <h1>Первое задание</h1>
                     <ul>
-                        <li>Форк https://github.com/naumen/liquid-log</li>
+                        <li>Форк <a href="https://github.com/naumen/liquid-log">https://github.com/naumen/liquid-log</a></li>
                         <li>Создание ветки</li>
                         <li>Коммит</li>
                         <li>Pull Request</li>
-                        <li>Упоминание @ykalemi, @d0k1</li>
+                        <li>Упоминание <a href="https://github.com/ykalemi">@ykalemi</a>, <a href="https://github.com/d0k1">@d0k1</a></li>
                         <li>Комментарии</li>
                         <li>Merge</li>
                     </ul>
