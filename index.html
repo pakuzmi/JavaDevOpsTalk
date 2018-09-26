@@ -77,9 +77,9 @@
                 margin: 0 auto;
             } */
             
-            body {
+            /* body {
                 transform: scale(.8) translateY(-135px);
-            }
+            } */
 
             img {
                 transform: scale(.8)
@@ -216,17 +216,27 @@
                             Подробнее тут:
                             <a href="https://git-scm.com/book/ru/v2">https://git-scm.com/book/ru/v2</a>
                         </p>
-                </section>
-
-                <section>
-                    <h1>Ветки / branch</h1>
-                    <img src="img/git_branches.png" style="width:500px"/>
                 </section> 
                 
                 <section>
-                        <h1>Ветки / branch</h1>
-                        <img src="img/git_branches_2.png" style="width:500px"/>
-                </section> 
+                        <h2>Ветки / branch</h2>
+                        <img src="img/git_branches4.png" style="width:500px; height: 550px;"/>
+                </section>
+
+                <section>
+                    <h2>Ветки / branch</h2>
+                    <img src="img/git_branches5.png" style="width:300px; height: 550px;"/>
+                </section>
+
+                <section>
+                    <h2>Ветки / branch</h2>
+                    <img src="img/git_branches6.png" style="width:400px; height: 550px;"/>
+                </section>
+
+                <section>
+                    <h2>Ветки / branch</h2>
+                    <img src="img/git_branches3.png" style="width:500px; height: 550px; transform: scaleX(1.2)"/>
+                </section>
                 
                 <section>
                     <h1>Git: cheat sheet</h1>
@@ -236,7 +246,7 @@
                             <li>git checkout -b ${branchName}</li>
                             <li>Do work</li>
                             <li>git add .</li>
-                            <li>git commit -m ${MessageAboutCommit}</li>
+                            <li>git commit -m '${messageAboutCommit}'</li>
                             <li>git push origin ${branchName}</li>
                         </ul>
                     </p>
@@ -330,7 +340,6 @@ $ java HelloWorld
                         <li>groupId <cite>ru.naumen</cite></li>
                         <li>artifactId <cite>cti</cite></li>
                         <li>version <cite>4.8.0</cite></li>
-                        <li>scope <cite>compile</cite></li>
                         <li>excludes</li>
                     </ul>
                 </section>
@@ -416,7 +425,7 @@ $ java HelloWorld
 
                 <section>
                     <h1>Структура проекта</h1>
-                    <img src="img/gradle_structure.png">
+                    <img src="img/gradle_structure.png" style="height: 500px; width: 500px;" >
                 </section>
 
                 <section>
@@ -427,7 +436,7 @@ apply plugin:'java'
 apply plugin:'checkstyle'
 apply plugin:'findbugs'
 apply plugin:'pmd'
-version ='1.0'
+version = '1.0'
 repositories {
     mavenCentral()
 }
@@ -460,6 +469,10 @@ mvn clean install
 cp target/artifact.war ../tomcat/webapps
 ../tomcat/bin/startup.sh
 mvn test
+...
+git checkout develop
+git merge ${branchName}
+git push origin develop
                     </code></pre>
                 </section>
                 <section>
@@ -472,12 +485,12 @@ mvn test
                         <tr>
                             <td>
                                 <pre style="width:auto;"><code data-trim class="bash">
-# завтра в отпуск
+# Завтра в отпуск
 git checkout master
 # Надо срочно доделать задачу
 git commit -am 'Killer feature'
 git push origin master
-# Наконец то отпуск
+# Наконец-то отпуск!
                                 </code></pre>
                             </td>
                             <td>
@@ -713,62 +726,59 @@ BUILD FAILED
                     <h1>Openshift</h1>
                     <ul>
                         <li>Новый проект</li>
-                        <li>Точки доступа(Url)</li>
-                        <li>Логины пароли</li>
-                        <li>Переменные окружения</li>
-                        <li>Обновление приложения</li>
-                        <li>Логи</li>
+                        <li>Свойства уже существующих проектов</li>
+                        <li>Обновление приложения. GitHub hooks</li>
                     </ul>
                 </section>
 
                 <section>
-                    <h1>Openshift. Новый проект</h1>
-                    <img src="img/openshift1.png" height="450px"/>
+                    <h2>Openshift. Новый проект</h2>
+                    <img src="img/openshift1.png" height="450px" style="transform: scale(1.1)" />
                 </section>
         
                 <section>
-                    <h1>Openshift. Новый проект</h1>
-                    <img src="img/openshift2.png" height="450px"/>
+                    <h2>Openshift. Новый проект</h2>
+                    <img src="img/openshift2.png" height="450px" style="transform: scale(1.1)"/>
                 </section>
 
                 <section>
-                    <h1>Openshift. Новый проект</h1>
-                    <img src="img/openshift3.png"/>
+                    <h2>Openshift. Новый проект</h2>
+                    <img src="img/openshift3.png" style="transform: scale(1.1)"/>
                 </section>
 
                 <section>
-                    <h1>Openshift. Новый проект</h1>
-                    <img src="img/openshift4.png"/>
+                    <h2>Openshift. Новый проект</h2>
+                    <img src="img/openshift4.png" style="transform: scale(1.1)"/>
                 </section>
 
                 <section>
-                    <h1>Openshift. Новый проект</h1>
-                    <img src="img/openshift5.png" height="450px"/>
+                    <h2>Openshift. Новый проект</h2>
+                    <img src="img/openshift5.png" height="450px" style="transform: scale(1.1)"/>
                 </section>
 
                 <section>
-                    <h1>Openshift. Новый проект</h1>
-                    <img src="img/openshift6.png" height="450px"/>
+                    <h2>Openshift. Новый проект</h2>
+                    <img src="img/openshift6.png" height="450px" style="transform: scale(1.1)"/>
                 </section>
 
                 <section>
-                    <h1>Openshift. Новый проект</h1>
-                    <img src="img/openshift7.png"/>
+                    <h2>Openshift. Новый проект</h2>
+                    <img src="img/openshift7.png" style="transform: scale(1.2)"/>
                 </section>
 
                 <section>
-                    <h1>Openshift. Новый проект</h1>
-                    <img src="img/openshift8.png"/>
+                    <h2>Openshift. Новый проект</h2>
+                    <img src="img/openshift8.png" style="transform: scale(1.2)" />
                 </section>
 
                 <section>
-                    <h1>Openshift. Новый проект</h1>
-                    <img src="img/openshift9.png"/>
+                    <h2>Openshift. Новый проект</h2>
+                    <img src="img/openshift9.png" style="transform: scale(1.2)"/>
                 </section>
 
                 <section>
-                    <h1>Openshift. Новый проект</h1>
-                    <img src="img/openshift10.png"/>
+                    <h2>Openshift. Новый проект</h2>
+                    <img src="img/openshift10.png" style="transform: scale(1.2) scaleY(.9)"/>
                 </section>
 
                 <section>
@@ -778,17 +788,17 @@ BUILD FAILED
 
                 <section>
                     <h2>Openshift. Свойства существующих проектов</h2>
-                    <img src="img/openshift12.png"/>
+                    <img src="img/openshift12.png" style="transform: scale(1.2)"/>
                 </section>
 
                 <section>
                     <h2>Openshift. Свойства существующих проектов</h2>
-                    <img src="img/openshift13.png"/>
+                    <img src="img/openshift13.png" style="transform: scale(1.2)"/>
                 </section>
 
                 <section>
                     <h2>Openshift. Свойства существующих проектов</h2>
-                    <img src="img/openshift14.png"/>
+                    <img src="img/openshift14.png" style="transform: scale(1.2)"/>
                 </section>
 
                 <section>
@@ -798,21 +808,69 @@ BUILD FAILED
 
                 <section>
                     <h2>Openshift. Свойства существующих проектов</h2>
-                    <img src="img/openshift16.png"/>
+                    <img src="img/openshift16.png" style="transform: scale(1.2)"/>
                 </section>
 
                 <section>
                     <h2>Openshift. Свойства существующих проектов</h2>
-                    <img src="img/openshift17.png"/>
+                    <img src="img/openshift17.png" style="transform: scale(1.2)"/>
+                </section>
+
+                <section>
+                    <h2>Openshift. GitHub hooks</h2>
+                    <img src="img/oshook4.png" style="transform: scale(1.2)" />
+                </section>
+
+                <section>
+                    <h2>Openshift. GitHub hooks</h2>
+                    <img src="img/oshook5.png" style="transform: scale(1.2)" />
+                </section>
+
+                <section>
+                    <h2>Openshift. GitHub hooks</h2>
+                    <img src="img/oshook6.png" style="transform: scale(1.2)" />
+                </section>
+
+                <section>
+                    <h2>Openshift. GitHub hooks</h2>
+                    <img src="img/oshook8.png" style="transform: scale(1.2)" />
+                </section>
+                
+                <section>
+                    <h2>Openshift. GitHub hooks</h2>
+                    <img src="img/oshook9.png" style="transform: scale(1.2)" />
+                </section>
+
+                <section>
+                    <h2>Openshift. GitHub hooks</h2>
+                    <img src="img/oshook10.png" style="transform: scale(1.2)" />
+                </section>
+
+                <section>
+                    <h2>Openshift. GitHub hooks</h2>
+                    <img src="img/oshook11.jpg" style="transform: scale(1.1)" />
+                </section>
+
+                <section>
+                    <h2>Openshift. Чтобы пользоваться</h2>
+                    <ul>
+                        <li>Заргистрироваться на GitHub</li>
+                        <li>Отправить свой email, связанный с учеткой GitHub:</li>
+                        <ul>
+                            <li>на <a href="mailto:imkn@naumen.ru">imkn@naumen.ru</a></li>
+                            <li>либо</li>
+                            <li>в <a href="https://t.me/joinchat/CTLnl017Kbu3vuoxrv6h7w">https://t.me/joinchat/CTLnl017Kbu3vuoxrv6h7w</a></li>
+                        </ul>
+                    </ul>
                 </section>
 
                 <section>
                     <h1>Первое задание</h1>
                     <ul>
-                        <li>Форк <a href="https://github.com/naumen/liquid-log">https://github.com/naumen/liquid-log</a></li>
+                        <li>Форк <a href="https://github.com/naumen-student/liquid-log">https://github.com/naumen-student/liquid-log</a></li>
                         <li>Создание ветки</li>
                         <li>Коммит</li>
-                        <li>Pull Request</li>
+                        <li>Pull Request <b style="color: red">в свой репозиторий</b></li>
                         <li>Упоминание <a href="https://github.com/ykalemi">@ykalemi</a>, <a href="https://github.com/d0k1">@d0k1</a></li>
                         <li>Комментарии</li>
                         <li>Merge</li>
@@ -823,7 +881,7 @@ BUILD FAILED
                     <h1>Ссылки</h1>
                     <ul>
                         <li>Презентация: <a href="https://donkeyhot1.github.io/JavaDevOpsTalk">https://donkeyhot1.github.io/JavaDevOpsTalk</a></li>
-                        <li>Домашние задания: <a href="https://github.com/naumen/liquid-log/issues">https://github.com/naumen/liquid-log/issues</a></li>
+                        <li>Домашние задания: <a href="https://github.com/naumen-student/liquid-log/issues">https://github.com/naumen-student/liquid-log/issues</a></li>
                         <li>Openshift: <a href="https://oc.nsd.naumen.ru">https://oc.nsd.naumen.ru</a></li>
                     </ul>
                 </section>
@@ -843,6 +901,7 @@ BUILD FAILED
                 history: true,
                 center: true,
                 slideNumber: true,
+                zoomKey: 'shift',
         
                 transition: 'slide', // none/fade/slide/convex/concave/zoom
         
