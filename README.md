@@ -1,3 +1,3 @@
 # JavaDevOpsTalk
 
-https://donkeyhot1.github.io/JavaDevOpsTalk/#/
+https://weedlord228.github.io/JavaDevOpsTalk/
